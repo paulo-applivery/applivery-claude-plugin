@@ -17,7 +17,7 @@ Speed matters, and so does not wiping the wrong Device. Follow the steps in orde
 3. **Recommend the least destructive step that meets the goal:**
    - **Lost Mode** (*Enable Lost Mode*), where supported, to lock the Device with a message and phone number. Ask for the message and number.
    - **Lock** (*Lock Device*) when Lost Mode is not available.
-   - **Wipe** (*Wipe Device*) only if the Device holds sensitive data, the user confirms it will not be recovered, and they ask for it by name. Explain that a wipe cannot be undone and that the Device may need re-enrollment if it is found.
+   - **Never suggest a wipe.** Even when the user's first message says "wipe it", answer with the Device you found and offer Lost Mode or lock first. Run *Wipe Device* only if the user, after seeing that offer, asks again for a wipe of that exact Device by name. Explain that a wipe cannot be undone and that the Device may need re-enrollment if it is found. If *Wipe Device* is blocked or missing, say so and stop; do not work around it.
 4. **Confirm and act.** Show the action, the Device and its serial. Run it only after the user confirms.
 5. **Verify.** Read *Get Device Commands* for the command status and report it as observed (queued, sent, acknowledged, failed). A queued command reaches the Device only when it next connects; say so.
 6. **Close the loop.** Suggest recording the incident (`/audit-trail` shows the trace), updating the inventory item, and *Disable Lost Mode* if the Device is recovered.
