@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "applivery": {
+      "type": "http",
+      "url": "https://mcp.applivery.ai/mcp/anthropic"
+    },
+    "applivery-docs": {
+      "type": "http",
+      "url": "https://docs.applivery.com/mcp"
+    }
+  }
+}
