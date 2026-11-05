@@ -1,7 +1,7 @@
 {
   "name": "applivery",
   "displayName": "Applivery",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Run your Apple, Android and Windows fleet from Claude with Applivery. Skills for fleet health, device troubleshooting, lost devices, onboarding and offboarding, safe policy changes, audit investigations, app and asset inventory, plus the Applivery MCP server and the Applivery Docs server. Every change asks for your confirmation and runs with your own Applivery permissions.",
   "author": {
     "name": "Applivery",
