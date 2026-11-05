@@ -1,0 +1,27 @@
+{
+  "name": "applivery",
+  "displayName": "Applivery",
+  "version": "0.1.0",
+  "description": "Run your Apple, Android and Windows fleet from Claude with Applivery. Skills for fleet health, device troubleshooting, lost devices, onboarding and offboarding, safe policy changes, audit investigations, app and asset inventory, plus the Applivery MCP server and the Applivery Docs server. Every change asks for your confirmation and runs with your own Applivery permissions.",
+  "author": {
+    "name": "Applivery",
+    "url": "https://www.applivery.com",
+    "email": "support@applivery.com"
+  },
+  "homepage": "https://docs.applivery.com/en/intelligence/applivery-mcp/",
+  "repository": "https://github.com/paulo-applivery/applivery-claude-plugin",
+  "license": "MIT",
+  "keywords": [
+    "mdm",
+    "uem",
+    "device-management",
+    "endpoint-management",
+    "apple",
+    "android",
+    "windows",
+    "it-admin",
+    "applivery"
+  ],
+  "privacyPolicyUrl": "https://www.applivery.com/legal/privacy-policy/",
+  "icon": "./.claude-plugin/icon.png"
+}
