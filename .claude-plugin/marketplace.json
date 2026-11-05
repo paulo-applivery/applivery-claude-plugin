@@ -1,0 +1,16 @@
+{
+  "name": "applivery",
+  "description": "Official Applivery plugin for Claude: device management skills plus the Applivery MCP and Docs servers.",
+  "owner": {
+    "name": "Applivery",
+    "url": "https://www.applivery.com"
+  },
+  "plugins": [
+    {
+      "name": "applivery",
+      "description": "Applivery skills plus the Applivery MCP and Applivery Docs servers, in one install.",
+      "source": "./",
+      "homepage": "https://docs.applivery.com/en/intelligence/applivery-mcp/"
+    }
+  ]
+}
