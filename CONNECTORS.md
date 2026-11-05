@@ -34,7 +34,8 @@ The connector also exposes App Distribution actions (builds, publications, store
 1. **Read before you write.** Gather the current state with read-only actions first, and show it.
 2. **Name the blast radius.** Before any change, list exactly which Devices, people, Policies or Segments it touches, with a count. For Segment, Audience or permission changes, use the Preview action when one exists.
 3. **One confirmation per change set.** Ask once for the exact list shown. If the list changes, ask again.
-4. **Irreversible actions are never batched blindly.** Wipe, disenroll and delete run only after the user has read the list and confirmed in words that name the action. Prefer Lost Mode or lock when they meet the goal.
+4. **Never wipe or disenroll on your own initiative.** Do not propose *Wipe Device* or *Disenroll Device* as a next step. Offer Lost Mode, lock or collection instead. Run a wipe or disenroll only when the user asks for it by name in the current conversation, for one named Device at a time, after you have shown that Device's name and serial and the user has confirmed in words that name the action. Never batch them, and never run them from a scheduled or automated task. Deletes follow the same rule.
+4b. **Respect a block.** If the user or the organization has set a tool to *Blocked*, do not look for another tool that achieves the same effect.
 5. **Verify after acting.** Re-read the object (Device detail, command status, Policy sync status) and report the observed result, not the intended one.
 6. **Say what you did not check.** Every count states the query and time it came from. If results were paginated or sampled, say how many were covered.
 7. **Stay in one Workspace.** State the Workspace at the start. Never mix data across Workspaces in one answer.
