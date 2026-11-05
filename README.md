@@ -19,9 +19,9 @@ Claude acts as you. It sees only the Workspaces and actions your Applivery role 
 | `/applivery-setup` | Connect Applivery, confirm the right Workspace and set sensible tool permissions |
 | `/fleet-health` | Get a fleet health report: stale check-ins, OS versions, encryption, policy sync |
 | `/device-investigate` | Find out why one device is non-compliant, missing an app or not reporting |
-| `/lost-device` | Handle a lost or stolen device: locate, Lost Mode, lock, and wipe only on explicit confirmation |
+| `/lost-device` | Handle a lost or stolen device: locate it, then Lost Mode or lock. It never suggests a wipe |
 | `/employee-onboarding` | Prepare enrollment for a new hire and assign their devices |
-| `/employee-offboarding` | List everything assigned to a leaver and run the return or wipe plan |
+| `/employee-offboarding` | List everything assigned to a leaver and run the collection or lock plan |
 | `/policy-change` | Preview who a policy or Segment change affects, stage it, apply it and check sync |
 | `/audit-trail` | Answer who did what, when and on which Device or Policy |
 | `/app-inventory` | Review installed apps and app usage on Devices, and install or uninstall with confirmation |
@@ -51,8 +51,8 @@ Restart Claude Code, then run `/applivery-setup`.
 
 - **Your role is the ceiling.** Authorization is OAuth 2.1 with PKCE against your own Applivery account. There is no shared service account and no API key to paste.
 - **Reads and writes are separate.** Read actions are labelled read-only; anything that changes state, including remote commands such as lock or restart, is labelled destructive.
-- **Recommended settings in Claude:** leave read-only tools on *Needs approval* until you trust the workflows, then switch them to *Always allow*. Keep write tools on *Needs approval*. Set *Wipe Device* and *Disenroll Device* to *Blocked* unless your team needs them in chat.
-- **The skills add their own gates.** Before any destructive action they show the exact list of Devices or objects affected and wait for you to confirm. They never batch a wipe, disenroll or delete you have not read.
+- **Recommended settings in Claude:** leave read-only tools on *Needs approval* until you trust the workflows, then switch them to *Always allow*. Keep write tools on *Needs approval*. Set *Wipe Device* and *Disenroll Device* to *Blocked*: wiping or releasing a Device is best done from the Applivery dashboard.
+- **The skills add their own gates.** Before any change they show the exact Devices or objects affected and wait for you to confirm. They never suggest a wipe or disenroll, never run one in a batch, and run one only when you ask for it by name for a single Device. If a tool is blocked, they stop instead of working around it.
 
 ## What the plugin runs, sends and fetches
 
